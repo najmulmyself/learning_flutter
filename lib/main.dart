@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Welcome"),
+          backgroundColor: Colors.deepPurpleAccent,
         ),
         body: Center(
           // child: Text("Hello World"),
