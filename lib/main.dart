@@ -27,16 +27,30 @@ class MyApp extends StatelessWidget {
               //     style: TextStyle(color: Colors.amber, fontSize: 50.0),
               //   ),
               // ),
+
               Container(
             width: double.infinity,
             height: double.infinity,
             color: Colors.amber.shade50,
             child: Column(
+              // mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                Container(
-                  width: 120,
-                  height: 50,
-                  color: Colors.greenAccent,
+                Padding(
+                  padding: const EdgeInsets.only(top: 50.0, right: 8.0),
+                  child: Container(
+                    width: 150,
+                    height: 50,
+                    color: Colors.greenAccent,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    width: 70,
+                    height: 50,
+                    color: Colors.blueAccent,
+                  ),
                 )
               ],
             ),
