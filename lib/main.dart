@@ -45,15 +45,15 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 180.0),
+                  padding: const EdgeInsets.only(bottom: 0),
                   child: Container(
                     width: 50,
-                    height: 250,
+                    height: 50,
                     color: Colors.blueAccent,
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 8.0),
+                  padding: const EdgeInsets.only(left: 8.0, bottom: 260),
                   child: Container(
                     width: 50,
                     height: 70,
