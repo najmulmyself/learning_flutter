@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,25 +15,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Welcome"),
-          backgroundColor: Colors.deepPurpleAccent,
+          backgroundColor: Colors.amber.shade300,
+          title: Text(
+            "Container",
+          ),
         ),
         body: Center(
-          // child: Text("Hello World"),
-          // Text("Another Hello World") // child cannot take more than one widget
-          // TO USE MORE THAN ONE WIDGET WE NEED TO USE ROW / COLUMN PROPERTY WHERE MULTIPLE PROPERTY CAN BE PASSED BY CHILDREN
-          child: Column(
-            children: [
-              Text(
-                "Hello",
-                style: TextStyle(fontStyle: FontStyle.italic),
-              ),
-              Text(
-                "World",
-                style: TextStyle(color: Colors.deepPurpleAccent),
-              ),
-              Text("Form Column")
-            ],
+          child: Text(
+            "Hello World",
+            style: TextStyle(color: Colors.amber, fontSize: 50.0),
           ),
         ),
       ),
