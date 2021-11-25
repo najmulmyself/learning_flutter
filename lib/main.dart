@@ -14,19 +14,33 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.amber.shade300,
-          title: Text(
-            "Container",
+          appBar: AppBar(
+            backgroundColor: Colors.amber.shade300,
+            title: Text(
+              "Container",
+            ),
           ),
-        ),
-        body: Center(
-          child: Text(
-            "Hello World",
-            style: TextStyle(color: Colors.amber, fontSize: 50.0),
-          ),
-        ),
-      ),
+          body:
+              // Center(
+              //   child: Text(
+              //     "Hello World",
+              //     style: TextStyle(color: Colors.amber, fontSize: 50.0),
+              //   ),
+              // ),
+              Container(
+            width: double.infinity,
+            height: double.infinity,
+            color: Colors.amber.shade50,
+            child: Column(
+              children: [
+                Container(
+                  width: 120,
+                  height: 50,
+                  color: Colors.greenAccent,
+                )
+              ],
+            ),
+          )),
     );
   }
 }
