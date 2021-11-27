@@ -33,36 +33,51 @@ class MyApp extends StatelessWidget {
             height: double.infinity,
             color: Colors.amber.shade50,
             child: SingleChildScrollView(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                // mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.end,
+              // scrollDirection: Axis.horizontal, // horizontal scrol view
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(right: 8.0, bottom: 130),
-                    child: Container(
-                      width: 50,
-                      height: 200,
-                      color: Colors.greenAccent,
-                    ),
+                  Container(
+                    width: 200,
+                    height: 100,
+                    color: Colors.blueAccent.shade100,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 0),
-                    child: Container(
-                      width: 50,
-                      height: 50,
-                      color: Colors.blueAccent,
-                    ),
+                  Container(
+                    width: 200,
+                    height: 100,
+                    color: Colors.redAccent.shade100,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 8.0, bottom: 260),
-                    child: Container(
-                      width: 50,
-                      height: 70,
-                      color: Colors.redAccent.shade400,
-                    ),
-                  )
                 ],
+
+                // mainAxisAlignment: MainAxisAlignment.end,
+                // // mainAxisAlignment: MainAxisAlignment.center,
+                // crossAxisAlignment: CrossAxisAlignment.end,
+                // children: [
+                //   Padding(
+                //     padding: const EdgeInsets.only(right: 8.0, bottom: 130),
+                //     child: Container(
+                //       width: 50,
+                //       height: 200,
+                //       color: Colors.greenAccent,
+                //     ),
+                //   ),
+                //   Padding(
+                //     padding: const EdgeInsets.only(bottom: 0),
+                //     child: Container(
+                //       width: 50,
+                //       height: 50,
+                //       color: Colors.blueAccent,
+                //     ),
+                //   ),
+                //   Padding(
+                //     padding: const EdgeInsets.only(left: 8.0, bottom: 260),
+                //     child: Container(
+                //       width: 50,
+                //       height: 70,
+                //       color: Colors.redAccent.shade400,
+                //     ),
+                //   )
+                // ],
               ),
             ),
           )),
