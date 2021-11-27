@@ -32,35 +32,38 @@ class MyApp extends StatelessWidget {
             width: double.infinity,
             height: double.infinity,
             color: Colors.amber.shade50,
-            child: Row(
-              // mainAxisAlignment: MainAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(right: 8.0, bottom: 130),
-                  child: Container(
-                    width: 50,
-                    height: 200,
-                    color: Colors.greenAccent,
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                // mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(right: 8.0, bottom: 130),
+                    child: Container(
+                      width: 50,
+                      height: 200,
+                      color: Colors.greenAccent,
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 0),
-                  child: Container(
-                    width: 50,
-                    height: 50,
-                    color: Colors.blueAccent,
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 0),
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      color: Colors.blueAccent,
+                    ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 8.0, bottom: 260),
-                  child: Container(
-                    width: 50,
-                    height: 70,
-                    color: Colors.redAccent.shade400,
-                  ),
-                )
-              ],
+                  Padding(
+                    padding: const EdgeInsets.only(left: 8.0, bottom: 260),
+                    child: Container(
+                      width: 50,
+                      height: 70,
+                      color: Colors.redAccent.shade400,
+                    ),
+                  )
+                ],
+              ),
             ),
           )),
     );
